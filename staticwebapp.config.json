@@ -13,10 +13,6 @@
       }
     },
     {
-      "route": "/manifest.json",
-      "allowedRoles": ["anonymous"]
-    },
-    {
       "route": "/assets/*",
       "headers": {
         "cache-control": "must-revalidate, max-age=15770000"
@@ -53,6 +49,10 @@
     {
       "route": "/api/Public*",
       "allowedRoles": ["admin", "editor", "readonly", "authenticated", "anonymous"]
+    },
+    {
+      "route": "/manifest.json",
+      "allowedRoles": ["anonymous"]
     },
     {
       "route": "*",
